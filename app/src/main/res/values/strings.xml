@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Character Guesser</string>
+    <string name="who_am_i">Who Am I?</string>
+    <string name="guess_me">Guess Me</string>
+    <string name="meet_me">Meet Me</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="anime_guesser">Anime Guesser</string>
+    <string name="quit">QUIT</string>
+
+    <string name="whoAmIStringText">In Who Am I Mode you will be asked a bunch of questions and based on your answers we will tell you which main protagonist you are :)</string>
+    <string name="guessMeStringText">In Guess Me, you will also be asked questions around a certain figure and you will have to guess it and test your anime knowledge :\')</string>
+    <string name="meetMeStringText">In meet me, you will see a list of anime characters and their corresponding anime. Maybe you are a hardcore fan and you already know them by heart :)</string>
+    <string name="whoCreatedThisAppStringText">A lebanese student named Jean-Paul created this app for his university project on December 2019 (The time where Lebanon Revolution began). He was a hardcore anime fan and a developer.</string>
+    <string name="score">Score:</string>
+    <string name="game_over">Game Over!</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="retry">Retry</string>
+</resources>

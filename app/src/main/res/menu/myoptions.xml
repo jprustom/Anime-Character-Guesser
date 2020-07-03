@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/changeMusic"
+    app:showAsAction="always"
+    android:icon="@android:drawable/ic_media_next"
+    android:title="Change Music"/>
+    <item
+        android:title="Mute"
+        android:id="@+id/muteMusic"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_lock_silent_mode_off"
+    />
+    <item
+        android:title="Change Background"
+        app:showAsAction="never"
+        android:id="@+id/changeBackground"
+        />
+    <item
+        android:title="Help"
+        app:showAsAction="never"
+        android:id="@+id/helpMe"
+        />
+</menu>

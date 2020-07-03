@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#AADDDD"
+    android:layout_height="match_parent"
+    tools:context=".guessModeActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--The layout below is the score and highscore layout-->
+    <LinearLayout
+        android:id="@+id/scoreHighscoreLayout"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <LinearLayout
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/robotothin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:fontFamily="@font/robotothin"
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="100"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/robotothin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best:"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:fontFamily="@font/robotothin"
+                android:id="@+id/highScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="  100"
+                android:textStyle="bold"
+
+
+                android:textSize="40sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/heartsprite"/>
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/heartsprite"/>
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/heartsprite"/>
+    </LinearLayout>
+
+    <!--This is the question to be displayed on screen-->
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:visibility="visible"
+        android:id="@+id/whatToGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="I Got Tortured For 10 Days Straight..."
+        android:textStyle="bold"
+        android:layout_below="@+id/scoreHighscoreLayout"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <!--In this layout I will have the anime characters as multiple choice-->
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/charactersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="sasuke"
+                android:id="@+id/sasukeImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/sasukeguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="luffy"
+                android:id="@+id/luffyImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/luffyguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="eren"
+                android:id="@+id/erenImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/erenguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="naruto"
+                android:id="@+id/narutoImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/narutoguessme"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="kaneki"
+                android:id="@+id/kanekiImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/kanekiguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="usopp"
+                android:id="@+id/usoppImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/usoppguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="sanji"
+                android:id="@+id/sanjiImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/sanjiguessme"/>
+            <ImageView
+                android:onClick="imageClicked"
+                android:tag="zoro"
+                android:id="@+id/zoroImage"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/zoroguessme"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--A funny game over background-->
+    <ImageView
+        android:visibility="invisible"
+        android:alpha="0.8"
+        android:id="@+id/gameOverImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/gameover2"/>
+
+    <!--The game over text will be displayed eventually-->
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:id="@+id/gameOverText"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/game_over"
+        android:textSize="60sp"/>
+
+    <!--This button will let user retry-->
+    <Button
+        android:id="@+id/retryButton"
+        android:visibility="invisible"
+        android:onClick="retry"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greenbutton"
+        android:text="@string/retry"
+        android:textColor="@android:color/white"/>
+<!--    This button will let user quit guess mode-->
+    <Button
+        android:id="@+id/quitButton"
+        android:visibility="invisible"
+        android:onClick="mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:text="@string/main_menu"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

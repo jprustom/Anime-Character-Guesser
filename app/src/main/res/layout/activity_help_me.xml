@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpMeActivity">
+
+<RelativeLayout
+    android:background="@android:color/holo_red_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/helpMeTitle"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/helpme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+
+        android:id="@+id/helpMeLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helpMeTitle"
+        >
+        <LinearLayout
+            android:tag="1"
+            android:onClick="help"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/luffythinking"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/whoami"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="help"
+            android:tag="2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/luffythinking"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/guessme"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="help"
+            android:tag="3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/luffythinking"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/meetme"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="help"
+            android:tag="4"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/luffythinking"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/whocreatedthisapp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:visibility="invisible"
+        android:id="@+id/whoAmIHelpMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpMeTitle"
+        android:layout_margin="20dp"
+        android:text="@string/whoAmIStringText"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+
+        />
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:visibility="invisible"
+        android:id="@+id/guessMeHelpMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpMeTitle"
+        android:layout_margin="20dp"
+        android:text="@string/guessMeStringText"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+
+        />
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:visibility="invisible"
+        android:id="@+id/meetMeHelpMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpMeTitle"
+        android:layout_margin="20dp"
+        android:text="@string/meetMeStringText"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+
+        />
+    <TextView
+        android:fontFamily="@font/robotothin"
+        android:visibility="invisible"
+        android:id="@+id/authorHelpMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpMeTitle"
+        android:layout_margin="20dp"
+        android:text="@string/whoCreatedThisAppStringText"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+
+        />
+    <Button
+        android:fontFamily="@font/robotothin"
+        android:id="@+id/goBack"
+        android:visibility="invisible"
+        android:onClick="goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        />
+    <ImageView
+        android:id="@+id/narutoSmiling"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/narutosmile"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

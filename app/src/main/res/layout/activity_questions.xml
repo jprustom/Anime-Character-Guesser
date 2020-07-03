@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#9FCBD3"
+    android:layout_height="match_parent"
+    tools:context=".questions">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/questionsLayout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Background image-->
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:alpha="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/naruto"/>
+
+        <!--Question asked-->
+        <TextView
+            android:fontFamily="@font/robotothin"
+            android:visibility="visible"
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Which motto suits you best?"
+
+
+            />
+
+        <!--Answers-->
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:id="@+id/answersLayout"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:fontFamily="@font/robotobold"
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="All things happening in my life are the consequences of my own actions"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:fontFamily="@font/robotobold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="All things happening in my life are the consequences of my own actions"/>
+            <CheckBox
+                android:fontFamily="@font/robotobold"
+                android:id="@+id/answer3"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="All things happening in my life are the consequences of my own actions"/>
+            <CheckBox
+                android:fontFamily="@font/robotobold"
+                android:id="@+id/answer4"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="All things happening in my life are the consequences of my own actions"/>
+        </LinearLayout>
+
+        <!--Result-->
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            >
+            <TextView
+                android:fontFamily="@font/robotobold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerTextView"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
+        </ScrollView>
+        <Button
+            android:onClick="returnToMenu"
+            android:visibility="invisible"
+            android:id="@+id/returnToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:background="@drawable/circle"
+            android:layout_centerHorizontal="true"
+            android:text="Menu"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/zorque"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

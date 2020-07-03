@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+
+       android:background="@android:color/holo_blue_light"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:id="@+id/backgroundImage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:srcCompat="@drawable/naruto"/>
+       <ImageView
+           android:id="@+id/textTitle"
+           android:layout_width="wrap_content"
+           android:textColor="@android:color/white"
+           android:layout_height="wrap_content"
+           app:srcCompat="@drawable/title"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           />
+
+       <!--Below is the linear layout of my menu options-->
+       <LinearLayout
+           android:visibility="visible"
+            android:id="@+id/mainMenu"
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true">
+           <Button
+               android:onClick="startNormalMode"
+               android:textColor="@android:color/white"
+               android:background="@drawable/oval"
+               android:fontFamily="@font/zorque"
+               android:id="@+id/normalMode"
+               android:layout_width="180dp"
+               android:layout_height="wrap_content"
+               android:text="@string/who_am_i"/>
+           <!--Blank Space-->
+           <View
+               android:layout_width="0dp"
+               android:layout_height="20dp"
+               />
+           <Button
+               android:fontFamily="@font/zorque"
+               android:onClick="startGuessMode"
+               android:textColor="@android:color/white"
+               android:background="@drawable/oval"
+               android:id="@+id/guessMode"
+               android:layout_width="180dp"
+               android:layout_height="wrap_content"
+               android:text="@string/guess_me"/>
+
+           <!--Blank Space-->
+           <View
+               android:layout_width="0dp"
+               android:layout_height="20dp"
+               />
+           <Button
+               android:fontFamily="@font/zorque"
+               android:onClick="displayCharacters"
+               android:textColor="@android:color/white"
+               android:background="@drawable/oval"
+               android:id="@+id/characterInfos"
+               android:layout_width="180dp"
+               android:layout_height="wrap_content"
+               android:text="@string/meet_me"/>
+
+
+
+
+
+
+           <!--Blank Space-->
+           <View
+               android:layout_width="0dp"
+               android:layout_height="20dp"/>
+
+
+
+       </LinearLayout>
+
+
+
+
+       <Button
+           android:fontFamily="@font/zorque"
+           android:visibility="visible"
+           android:textColor="@android:color/white"
+           android:background="@drawable/circle"
+           android:id="@+id/quit"
+           android:onClick="quit"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="40dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/quit"/>
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="120dp"
+           app:srcCompat="@drawable/lucyicon"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"/>
+
+
+
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
